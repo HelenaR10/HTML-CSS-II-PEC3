@@ -1,12 +1,27 @@
 @use "sass:color";
-
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol";
-$font-family-serif: "Georgia", "Times New Roman", serif;
-
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-$uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-
-$mqMinWidth: 420px;
+@layer components {
+  .global-measure {
+    @apply h-screen flex flex-col;
+  }
+  .flex-container {
+    @apply flex flex-col items-center text-center;
+  }
+  .grid-container {
+    @apply grid grid-cols-none lg:grid-cols-2;
+  }
+  .card-style {
+    @apply basis-full md:basis-[calc(50%-50px)] lg:basis-[calc(33.33%-16px)] border border-gray-300 rounded-[5px] overflow-hidden transition-transform duration-300 ease-in-out hover:scale-110
+  }
+  .card-name {
+    @apply p-1 font-semibold text-xl;
+  }
+  .info-paragraph {
+    @apply p-2 text-3xl font-exo;
+  }
+  .info-list-style {
+    @apply flex p-2 gap-2 items-baseline text-start list-none;
+  }
+  .icons-animation {
+    @apply transition-transform duration-300 ease-in-out hover:scale-110 text-blue-400;
+  }
+}

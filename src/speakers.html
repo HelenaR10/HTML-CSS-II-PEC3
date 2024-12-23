@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" class="h-screen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <title>Speakers</title>
+</head>
+
+<body class="global-measure">
+    <header>
+        <include src="./views/nav.html"></include>
+    </header>
+
+    <main class="flex-1">
+        <div>
+            <h1 class="p-10 text-center text-5xl font-exo">Nuestros Speakers</h1>
+            <div class="flex flex-wrap gap-5 w-[70%] p-7 my-0 mx-auto text-center justify-center">
+                <include src="./views/card.html">
+                    {
+                        "name": "Laura García Collado",
+                        "profession": "Analista de Ciberseguridad",
+                        "nameUrl": "./assets/images/speakers/laura.png"
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "name": "Cristian Gutiérrez Serrano",
+                        "profession": "Ingeniero de Seguridad Informática",
+                        "nameUrl": "./assets/images/speakers/cristian.png"
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "name": "Paloma Ruíz Borrego",
+                        "profession": "Pentester",
+                        "nameUrl": "./assets/images/speakers/paloma.png"
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "name": "Yamato Shin",
+                        "profession": "Administrador de Sistemas y Redes",
+                        "nameUrl": "./assets/images/speakers/yamato.png"
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "name": "Kate Smith",
+                        "profession": "Desarrolladora Web",
+                        "nameUrl": "./assets/images/speakers/kate.png"
+                    }
+                </include>
+                <include src="./views/card.html">
+                    {
+                        "name": "Sam Adams",
+                        "profession": "Forense Digital",
+                        "nameUrl": "./assets/images/speakers/sam.png"
+                    }
+                </include>
+            </div>
+        </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+</body>
+
+</html>
